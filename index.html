@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SuperNomada | Contabilidade Digital Inteligente</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #333;
+    }
+
+    .hero {
+      position: relative;
+      height: 60vh;
+      background-image: url('image2.png');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 128, 0, 0.7);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 10%;
+      background-color: #f5f5f5;
+    }
+
+    .section.reverse {
+      flex-direction: row-reverse;
+      background-color: white;
+    }
+
+    .section-text {
+      flex: 1;
+      min-width: 300px;
+      padding-right: 40px;
+    }
+
+    .section-text h2 {
+      color: #007a3d;
+      font-size: 2rem;
+    }
+
+    .section-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .section-img {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .section-img img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .btn {
+      background-color: #007a3d;
+      color: white;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .services {
+      background-color: #f5f5f5;
+      padding: 60px 10%;
+    }
+
+    .services h2 {
+      text-align: center;
+      color: #007a3d;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+    }
+
+    .services-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .service-card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      max-width: 300px;
+      flex: 1 1 250px;
+    }
+
+    .service-card h3 {
+      color: #007a3d;
+      margin-top: 0;
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    footer {
+      background-color: #007a3d;
+      color: white;
+      padding: 30px 10% 20px;
+    }
+
+    .footer-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .footer-column {
+      flex: 1 1 200px;
+      margin: 10px;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 10px;
+    }
+
+    .footer-column p,
+    .footer-column a {
+      color: white;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      text-decoration: none;
+    }
+
+    .footer-column a:hover {
+      text-decoration: underline;
+      color: #e0e0e0;
+    }
+
+    .footer-info {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #ccc;
+      margin-top: 30px;
+    }
+
+    .footer-info a {
+      color: #ccc;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .section-text {
+        padding-right: 0;
+      }
+
+      .footer-columns {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer-column {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>SuperNomada</h1>
+      <p>Gestão financeira com confiança, simplicidade e transparência.</p>
+    </div>
+  </section>
+
+  <!-- Introdução -->
+  <section class="section">
+    <div class="section-text">
+      <h2>Contabilidade moderna, digital e acessível</h2>
+      <p><strong>A SuperNomada</strong> é uma empresa de contabilidade digital orientada para profissionais e negócios que valorizam a agilidade, clareza e acessibilidade.</p>
+      <p>Trabalhamos de forma remota, segura e eficiente para que te possas focar no crescimento do teu negócio sem te preocupares com burocracias.</p>
+      <a class="btn" href="mailto:geral@supernomada.pt" id="contacto">Fala connosco</a>
+    </div>
+    <div class="section-img">
+      <img src="image2.png" alt="Contabilidade digital" />
+    </div>
+  </section>
+
+  <!-- Porquê escolher -->
+  <section class="section reverse">
+    <div class="section-text" style="padding-left: 2rem;">
+      <h2>Porquê escolher a SuperNomada?</h2>
+      <p>Acreditamos que a contabilidade deve ser uma aliada do teu negócio.  
+      Valorizamos a <strong>qualidade</strong> e a <strong>competência</strong> em tudo o que fazemos.</p>
+      <ul style="list-style: none; padding-left: 0; line-height: 1.7;">
+        <li>💻 Atendimento 100% remoto e personalizado</li>
+        <li>⚙️ Processos digitais simplificados</li>
+        <li>📞 Comunicação clara e acessível</li>
+        <li>🧠 Equipa experiente e dedicada ao teu sucesso</li>
+      </ul>
+    </div>
+    <div class="section-img">
+      <img src="image3.png" alt="Porquê escolher-nos">
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section class="services" id="services">
+    <h2>Os nossos serviços</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>📋 Contabilidade Geral</h3>
+        <p>Tratamos da contabilidade da tua empresa com rigor, segurança e clareza.</p>
+      </div>
+      <div class="service-card">
+        <h3>👥 Gestão de Recursos Humanos</h3>
+        <p>Processamento de salários, contratos e apoio administrativo aos colaboradores.</p>
+      </div>
+      <div class="service-card">
+        <h3>🚀 Apoio ao Empreendedor</h3>
+        <p>Criação de empresa, registos legais e acompanhamento inicial personalizado.</p>
+      </div>
+      <div class="service-card">
+        <h3>🧾 Apoio ao Contribuinte</h3>
+        <p>IRS, segurança social, faturas, despesas dedutíveis e mais — com apoio dedicado.</p>
+      </div>
+      <div class="service-card">
+        <h3>💼 Consultoria Fiscal</h3>
+        <p>Planeamento fiscal estratégico para otimização de impostos e conformidade legal.</p>
+      </div>
+      <div class="service-card">
+        <h3>📊 Relatórios e Indicadores</h3>
+        <p>Análises financeiras claras para que compreendas a performance do teu negócio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h4>🔗 Ligações</h4>
+        <p><a href="#services"> Serviços</a></p>
+        <p><a href="politica.html"> Política de Privacidade</a></p>
+      </div>
+      <div class="footer-column">
+        <h4>🌍 Localização</h4>
+        <p>Rua Alberto Pimenta Nº149 R/C <br>Maia, Portugal</p>
+      </div>
+      <div class="footer-column">
+        <h4>📧 Contactos</h4>
+        <p>Email: <a href="mailto:geral@supernomada.pt">geral@supernomada.pt</a></p>
+      </div>
+    </div>
+    <div class="footer-info">
+      <p>Para mais informações ou qualquer dúvida sobre os nossos serviços, envia-nos um email. Teremos todo o gosto em ajudar.</p>
+      <p>&copy; 2025 SuperNomada. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
